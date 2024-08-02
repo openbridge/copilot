@@ -49,20 +49,19 @@ Each prompt is accompanied by a brief description of its purpose, helping you qu
 Let's dive in!
 
 ### Recreate Visualizations and Reporting Dashboards
-Images of reports and dashboards provide a visual representation of the data and metrics. The AI can inspect these visuals help in understanding the key performance indicators (KPIs). The AI can then search it's understanding the structure of the datasets, including table names, column names, data types, and relationships between tables assocaited with the image. Based on the visual insights and dataset knowledge, an SQL view can be created to extract and organize the required data.
+Images of reports and dashboards visually represent the data and metrics. The AI can inspect these visuals to help understand the key performance indicators (KPIs). The AI can then search its understanding of the structure of the datasets, including table names, column names, data types, and relationships between tables associated with the image. Based on the visual insights and dataset knowledge, an SQL view can be created to extract and organize the required data.
 
-This can help teams quickly connect the dots betweeen a visual representation of different datasets to the actual data residing in your cloud warehouse or data lake.
+This can help teams quickly connect the dots between a visual representation of different datasets and the actual data in your cloud warehouse or data lake.
 
-The result is a view that organizes, calculates, and makes ready the data for use in tool like Looker,. Tableau, Power BI and many others. 
 
 #### Example Copilot Prompt
-Upload the reporting image, then construct a prompt that algins with your desired outcome:
+Upload the reporting image, then construct a prompt that aligns with your desired outcome:
 
 ![Amazon Brand Stores
 ](img/amzn_bs_stores.png)
 
 #### Copilot Creates a Model
-Based on the assessment and instruction, Copilot created the following view:
+The result is a view that organizes, calculates, and prepares the data for use in tools like Looker, Tableau, Power BI, and many others. 
 
 ![Amazon Brand Stores
 ](img/amzn_bs_stores_sql.png)

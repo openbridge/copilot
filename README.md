@@ -67,7 +67,7 @@ Based on the assessment and instruction, Copilot created the following view:
 ![Amazon Brand Stores
 ](img/amzn_bs_stores_sql.png)
 
-#### Quickly Create Report In Looker
+#### Quickly Create Amazon Brand Store Report In Looker
 With the view is configured in BigQuery, and then a report can be created from the view:
 
 ![Create Looker Report
@@ -77,6 +77,28 @@ Once inside Looker Studio, you can format, organize, and display the data howeve
 
 ![Amazon Brand Stores
 ](img/report_looker.png)
+
+#### Amazon Advertising Console Dasboard
+Here is another example, performing an analysis of a report dasboard for Amazon Sponsored Ads (Brand, Product, Display)
+
+![Create Looker Amazon Sponsored Ads Report
+](img/amzn_sponosred_ads.png)
+
+#### Copilot Creates a Model
+Based on the assessment and instruction, Copilot created the following view:
+
+![Amazon Sponsored Ads
+](img/amzn_sponosred_ads_sql.png)
+
+#### Quickly Create Amazon Sponsored Ads Report In Looker
+With the view is configured in BigQuery, and then a report can be created from the view:
+
+![Create Looker Amazon Sponsored Ads Report
+](img/report_looker_console.png)
+
+Once inside Looker Studio, you can format, organize, and display the data however you see fit to do so
+
+
 
 ### More Example Prompts: Table of Contents
 1. [SQL Query for ASIN Performance](#sql-query-for-asin-performance)

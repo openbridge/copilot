@@ -2,7 +2,9 @@
 
 Welcome to the **Openbridge Data Copilot**, a cutting-edge AI-driven data analyst you can quickly add to your team.
 
-The Openbridge Data Copilot is the ultimate companion in navigating the complexities of Amazon data analysis. With its advanced capabilities, intelligent insights, and user-friendly interaction, the Data Copilot is poised to transform your data experience, making it more efficient, insightful, and impactful. Embrace the future of data analysis with the Openbridge Data Copilot and unlock the full potential of your data today!
+The **[Openbridge Data Copilot](https://chatgpt.com/g/g-Sg4qP7r3v-openbridge-data-copilot)** is the ultimate companion in navigating the complexities of Amazon data analysis. With its advanced capabilities, intelligent insights, and user-friendly interaction, the Data Copilot will transform your data experience, making it more efficient, insightful, and impactful. 
+
+Embrace the future of data analysis with the Openbridge Data Copilot and unlock the full potential of your data today!
 
 ### Key Features and Capabilities
 
@@ -46,8 +48,37 @@ Each prompt is accompanied by a brief description of its purpose, helping you qu
 
 Let's dive in!
 
+### Recreate Visualizations and Reporting Dashboards
+Images of reports and dashboards provide a visual representation of the data and metrics. The AI can inspect these visuals help in understanding the key performance indicators (KPIs). The AI can then search it's understanding the structure of the datasets, including table names, column names, data types, and relationships between tables assocaited with the image. Based on the visual insights and dataset knowledge, an SQL view can be created to extract and organize the required data.
 
-### Example Prompts: Table of Contents
+This can help teams quickly connect the dots betweeen a visual representation of different datasets to the actual data residing in your cloud warehouse or data lake.
+
+The result is a view that organizes, calculates, and makes ready the data for use in tool like Looker,. Tableau, Power BI and many others. 
+
+#### Example Copilot Prompt
+Upload the reporting image, then construct a prompt that algins with your desired outcome:
+
+![Amazon Brand Stores
+](img/amzn_bs_stores.png)
+
+#### Copilot Creates a Model
+Based on the assessment and instruction, Copilot created the following view:
+
+![Amazon Brand Stores
+](img/amzn_bs_stores_sql.png)
+
+#### Quickly Create Report In Looker
+With the view is configured in BigQuery, and then a report can be created from the view:
+
+![Create Looker Report
+](img/explore_looker.png)
+
+Once inside Looker Studio, you can format, organize, and display the data however you see fit to do so
+
+![Amazon Brand Stores
+](img/report_looker.png)
+
+### More Example Prompts: Table of Contents
 1. [SQL Query for ASIN Performance](#sql-query-for-asin-performance)
 2. [Amazon API Response Analysis](#amazon-api-response-analysis)
 3. [Diagnostic Query Understanding](#diagnostic-query-understanding)
@@ -63,6 +94,7 @@ Let's dive in!
 13. [Amazon Brand Store Performance Analysis](#amazon-brand-store-performance-analysis)
 14. [Subscribe & Save Performance Analysis](#subscribe--save-performance-analysis)
 15. [Amazon Attribution Data Analysis](#amazon-attribution-data-analysis)
+
 
 #### SQL Query for ASIN Performance
 
@@ -178,7 +210,7 @@ This prompt requests a detailed performance analysis combining multiple Amazon B
 This prompt asks for an analysis of the impact of discount levels on subscription rates for Amazon Subscribe & Save products:
 
 ```
-"What is the impact of different discount levels on the subscription rates of my Amazon Subscribe & Save products? Use the Subscribe & Save Performance Report to analyze the correlation between discount levels offered and the resulting subscription rates and sales volume. Please use the Openbridge API to get the latest data models."
+"What is the impact of different discount levels on the subscription rates of my Amazon Subscribe & Save products? Use the Subscribe & Save Performance Report (sp_fba_sns_forecast) to analyze the correlation between discount levels offered and the resulting subscription rates and sales volume. Please use the Openbridge API to get the latest data scehemas."
 ```
 
 #### Amazon Attribution Data Analysis

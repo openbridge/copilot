@@ -67,12 +67,12 @@ The result is a view that organizes, calculates, and prepares the data for use i
 ](img/amzn_bs_stores_sql.png)
 
 #### Quickly Create Report In Looker
-With the view is configured in BigQuery, and then a report can be created from the view:
+With the view configured in BigQuery, a report can quickly be created from the view in Looker Studio:
 
 ![Create Looker Report
 ](img/explore_looker.png)
 
-Once inside Looker Studio, you can format, organize, and display the data however you see fit to do so
+Once inside Looker Studio, you can format, organize, and display the data however you see fit!
 
 ![Amazon Brand Stores
 ](img/report_looker.png)
